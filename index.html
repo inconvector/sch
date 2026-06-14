@@ -143,6 +143,11 @@
   </head>
   <body>
     <h1>CA Final Revision Exam Schedule</h1>
+    <div style="text-align:center; margin-bottom:15px;">
+      <button id="exportBtn">Export Backup</button>
+      <button id="importBtn">Import Backup</button>
+      <input type="file" id="importFile" accept="application/json" style="display:none;" />
+    </div>
 
     <div class="consolidated-summary">
       <div class="consolidated-card">
@@ -1068,6 +1073,9 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const inputs = document.querySelectorAll(".mark-field");
+      const exportBtn = document.getElementById("exportBtn");
+      const importBtn = document.getElementById("importBtn");
+      const importFile = document.getElementById("importFile");
       const maxMarks = 60;
       const specialExamMaxMarks = 600;
 
@@ -1196,6 +1204,61 @@
       // Run initial calculations on page load
       document.querySelectorAll("tr").forEach(updateRowResults);
       updateConsolidatedResults();
+
+      exportBtn.addEventListener("click", () => {
+        const backup = {};
+        inputs.forEach((input, index) => {
+          backup[`ca_final_marks_${index}`] = input.value || "";
+        });
+
+        const blob = new Blob([JSON.stringify(backup, null, 2)], {
+          type: "application/json",
+        });
+
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "ca-final-marks-backup.json";
+        a.click();
+        URL.revokeObjectURL(url);
+      });
+
+      importBtn.addEventListener("click", () => {
+        importFile.click();
+      });
+
+      importFile.addEventListener("change", (event) => {
+        const file = event.target.files[0];
+        if (!file) return;
+
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          try {
+            const backup = JSON.parse(e.target.result);
+
+            inputs.forEach((input, index) => {
+              const key = `ca_final_marks_${index}`;
+              if (backup[key] !== undefined) {
+                input.value = backup[key];
+
+                if (backup[key] === "") {
+                  localStorage.removeItem(key);
+                } else {
+                  localStorage.setItem(key, backup[key]);
+                }
+              }
+            });
+
+            document.querySelectorAll("tr").forEach(updateRowResults);
+            updateConsolidatedResults();
+            alert("Backup restored successfully.");
+          } catch {
+            alert("Invalid backup file.");
+          }
+        };
+
+        reader.readAsText(file);
+      });
     });
 
         // --- CA Final Exam Countdown Logic ---
