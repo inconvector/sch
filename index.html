@@ -1,0 +1,1232 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CA Final Nov 2026 Schedule</title>
+    <style>
+      
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background: #fff;
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      .table-container {
+        width: 100%;
+        overflow-x: auto;
+      }
+
+      table {
+        width: auto;
+        min-width: 1900px;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+      th,
+      td {
+        border: 2px solid #222;
+        padding: 12px;
+        vertical-align: middle;
+        text-align: center;
+      }
+      th {
+        background: #f2f2f2;
+      }
+      .topic {
+        font-weight: bold;
+      }
+      .small {
+        font-size: 14px;
+        line-height: 1.4;
+      }
+      .mark-input {
+        width: 60px;
+        padding: 4px;
+        text-align: center;
+      }
+      .result-cell {
+        min-width: 80px;
+        font-weight: bold;
+        background: #fafafa;
+      }
+      .gap-positive {
+        color: #16734d;
+      }
+      .gap-negative {
+        color: #b3261e;
+      }
+      .consolidated-summary {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(180px, 1fr));
+        gap: 12px;
+        margin: 16px auto 20px;
+        max-width: 900px;
+      }
+      .consolidated-card {
+        border: 2px solid #222;
+        background: #fafafa;
+        padding: 14px;
+        text-align: center;
+      }
+      .consolidated-card span {
+        display: block;
+        font-size: 13px;
+        font-weight: bold;
+        color: #555;
+        margin-bottom: 6px;
+      }
+      .consolidated-card strong {
+        display: block;
+        font-size: 28px;
+      }
+      .consolidated-card small {
+        display: block;
+        margin-top: 4px;
+        color: #555;
+      }
+
+      /* Timer */
+
+            .timer-container {
+        max-width: 900px;
+        margin: 0 auto 30px auto;
+        text-align: center;
+      }
+      .timer-container h2 {
+        margin-bottom: 12px;
+        color: #222;
+        font-size: 20px;
+      }
+      .timer-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
+        gap: 12px;
+        margin-bottom: 10px;
+      }
+      .timer-card {
+        border: 2px solid #222;
+        background: #fafafa;
+        padding: 14px;
+        text-align: center;
+      }
+      .timer-card strong {
+        display: block;
+        font-size: 32px;
+        color: #222;
+        font-variant-numeric: tabular-nums;
+      }
+      .timer-card span {
+        display: block;
+        font-size: 13px;
+        font-weight: bold;
+        color: #555;
+        margin-top: 6px;
+        text-transform: uppercase;
+      }
+      .timer-subtitle {
+        color: #555;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0;
+      }
+      /* Ensure it stacks nicely on smaller screens like an iPad vertically */
+      @media (max-width: 500px) {
+        .timer-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CA Final Revision Exam Schedule</h1>
+
+    <div class="consolidated-summary">
+      <div class="consolidated-card">
+        <span> Expected </span>
+        <strong id="consolidatedExpectedPercent">0%</strong>
+        <small id="consolidatedExpectedMarks">0 / 0</small>
+      </div>
+      <div class="consolidated-card">
+        <span>Actual </span>
+        <strong id="consolidatedActualPercent">0%</strong>
+        <small id="consolidatedActualMarks">0 / 0</small>
+      </div>
+      <div class="consolidated-card">
+        <span>Overall Gap</span>
+        <strong id="consolidatedGap">0</strong>
+        <small>Actual - Expected</small>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <!-- Timer  -->
+            <div class="timer-container">
+      <h2>Exam Countdown</h2>
+      <div class="timer-grid">
+        <div class="timer-card">
+          <strong id="days">00</strong>
+          <span>Days</span>
+        </div>
+        <div class="timer-card">
+          <strong id="hours">00</strong>
+          <span>Hours</span>
+        </div>
+        <div class="timer-card">
+          <strong id="minutes">00</strong>
+          <span>Mins</span>
+        </div>
+        <div class="timer-card">
+          <strong id="seconds">00</strong>
+          <span>Secs</span>
+        </div>
+      </div>
+      <p class="timer-subtitle">Nov 2, 2026 • 2:00 PM IST</p>
+    </div>
+
+
+
+      <table>
+        <tr>
+          <th>No</th>
+          <th>Date</th>
+          <th>1st Paper in Revision Exam (60 Marks)</th>
+          <th>2nd Paper in Revision Exam (60 Marks)</th>
+          <th colspan="2">Expected Marks</th>
+          <th colspan="2">Actual Marks</th>
+          <th>Expected %</th>
+          <th>Actual %</th>
+          <th>Gap</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>03.06.2026</td>
+          <td class="small">
+            <div class="topic">AFM</div>
+            Portfolio Management
+          </td>
+          <td class="small">
+            <div class="topic">AUDIT</div>
+            Quality Control (Including SQC-1 & SA 220) + General Auditing
+            Principles & Auditor's Responsibilities (SA 200 series & SA 402)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>10.06.2026</td>
+
+          <td>
+            <strong>FR</strong><br />
+            IND AS 1 PRESENTATION OF FINANCIAL STATEMENTS + IND AS 34 INTERIM
+            FINANCIAL REPORTING + IND AS 7 STATEMENT OF CASH FLOWS +
+            INTRODUCTION TO INDIAN AS + CONCEPTUAL FRAMEWORK FOR FINANCIAL
+            REPORTING UNDER IND AS + IND AS 108 OPERATING SEGMENTS
+            <br /><br />
+            (NO CUMULATIVE TESTING. 45M DESCRIPTIVE & 15M MCQs FROM THIS
+            SYLLABUS ITSELF)
+          </td>
+
+          <td>
+            <strong>AUDIT</strong><br />
+            RELATED SERVICES (INCLUDING SRS-4400, 4410) + PROSPECTIVE FINANCIAL
+            INFORMATION & OTHER ASSURANCE SERVICES (INCLUDING SA 3400, 3402,
+            3420)
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+          <td>17.06.2026</td>
+
+          <td>
+            <strong>FR</strong><br />
+            IND AS 2 INVENTORIES + IND AS 16 PROPERTY, PLANT & EQUIPMENT + IND
+            AS 40 INVESTMENT PROPERTY + IND AS 38 INTANGIBLE ASSETS + IND AS 41
+            AGRICULTURE + IND AS 12 INCOME TAXES + IND AS 10 EVENTS AFTER THE
+            REPORTING PERIOD
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+
+          <td>
+            <strong>AFM</strong><br />
+            FOREIGN EXCHANGE EXPOSURE & RISK MANAGEMENT - PART 1 (ROLE OF SWIFT
+            IN FOREIGN EXCHANGE, NATIONAL & INTERNATIONAL PAYMENTS GATEWAYS,
+            NOSTRO VOSTRO & LORO ACCOUNTS, EXCHANGE RATE QUOTATION, EXCHANGE
+            RATE FORECASTING, EXCHANGE RATE DETERMINATION, EXCHANGE RATE
+            THEORIES, FOREIGN EXCHANGE MARKETS, FOREIGN EXCHANGE EXPOSURE,
+            HEDGING CURRENCY RISK) + INTERNATIONAL FINANCIAL MANAGEMENT
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>7</td>
+          <td>24.06.2026</td>
+
+          <td>
+            <strong>AUDIT</strong><br />
+            PROFESSIONAL ETHICS & LIABILITIES OF AUDITORS UPTO SCHEDULE-I
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+
+          <td>
+            <strong>FR</strong><br />
+            IND AS 109, 32, 107 ACCOUNTING & REPORTING OF FINANCIAL INSTRUMENTS
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>9</td>
+          <td>01.07.2026</td>
+
+          <td>
+            <strong>AFM</strong><br />
+            FOREIGN EXCHANGE EXPOSURE & RISK MANAGEMENT (TOTAL CHAPTER) +
+            FINANCIAL POLICY & CORPORATE STRATEGY
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+
+          <td>
+            <strong>AUDIT</strong><br />
+            PROFESSIONAL ETHICS & LIABILITIES OF AUDITORS (TOTAL CHAPTER)
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td
+            colspan="4"
+            style="font-weight: bold; text-align: center; background: #f2f2f2"
+          >
+            QUARTER-FINAL EXAMS FROM 07.07.2026 TO 18.07.2026
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>11</td>
+          <td>22.07.2026</td>
+
+          <td>
+            <strong>FR</strong><br />
+            IND AS 115 REVENUE FROM CONTRACTS WITH CUSTOMERS + IND AS 105
+            NON-CURRENT ASSETS HELD FOR SALE AND DISCONTINUED OPERATIONS
+            <br /><br />
+            (NO CUMULATIVE TESTING. 45M DESCRIPTIVE & 15M MCQs FROM THIS
+            SYLLABUS ITSELF)
+          </td>
+
+          <td>
+            <strong>AUDIT</strong><br />
+            AUDIT EVIDENCE (INCLUDING SA-500, 501, 505, 510, 530, 550) +
+            COMPLETION & REVIEW (INCLUDING SA-560, 570, 580) + SPECIALIZED AREA
+            (INCLUDING SA-800, 805, 810)
+            <br /><br />
+            (NO CUMULATIVE TESTING. 45M DESCRIPTIVE & 15M MCQs FROM THIS
+            SYLLABUS ITSELF)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>29.07.2026</td>
+
+          <td>
+            <strong>AFM</strong><br />
+            MERGERS, ACQUISITIONS & CORPORATE RESTRUCTURING + SECURITIZATION
+            <br /><br />
+            (NO CUMULATIVE TESTING. 45M DESCRIPTIVE & 15M MCQs FROM THIS
+            SYLLABUS ITSELF)
+          </td>
+
+          <td>
+            <strong>AUDIT</strong><br />
+            REPORTING (INCLUDING SA 700, 701, 705, 706, 710, 720 & CARO 2020) +
+            DUE DILIGENCE, INVESTIGATION & FORENSIC ACCOUNTING
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>15</td>
+          <td>05.08.2026</td>
+
+          <td>
+            <strong>AUDIT</strong><br />
+            AUDIT PLANNING, STRATEGY & EXECUTION (INCLUDING SA 300, 540, 600,
+            620) + GROUP AUDITS + SUSTAINABLE DEVELOPMENT GOALS (SDG) &
+            ENVIRONMENT, SOCIAL & GOVERNANCE (ESG) ASSURANCE
+            <br /><br />
+            <strong>NOTE:</strong>
+            ALSO PREPARE SA 265, 450 EVEN THOUGH IT IS NOT MENTIONED IN THE
+            SYLLABUS. EXAMINER IS TESTING THEM IN THE PUBLIC EXAMS.
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+
+          <td>
+            <strong>AFM</strong><br />
+            DERIVATIVES ANALYSIS & VALUATION + RISK MANAGEMENT
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>17</td>
+          <td>12.08.2026</td>
+
+          <td>
+            <strong>FR</strong><br />
+            IND AS 103 BUSINESS COMBINATIONS
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+
+          <td>
+            <strong>AUDIT</strong><br />
+            OVERVIEW OF AUDIT OF PUBLIC SECTOR UNDERTAKINGS + REVIEW OF
+            FINANCIAL INFORMATION (INCLUDING SA 2400, 2410)
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>19</td>
+          <td>19.08.2026</td>
+
+          <td>
+            <strong>FR</strong><br />
+            INTRODUCTION TO CONSOLIDATED & SEPARATE FINANCIAL STATEMENTS +
+            IMPORTANT DEFINITIONS + IND AS 110 CONSOLIDATED FINANCIAL STATEMENTS
+            + CONSOLIDATION PROCEDURE FOR SUBSIDIARIES + IND AS 111 JOINT
+            ARRANGEMENTS + IND AS 28 INVESTMENT IN ASSOCIATES & JOINT VENTURES +
+            IND AS 27 SEPARATE FINANCIAL STATEMENTS + DISCLOSURES
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+
+          <td>
+            <strong>AFM</strong><br />
+            SECURITY VALUATION + SECURITY ANALYSIS + START-UP FINANCE
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr class="section-row">
+          <td colspan="4">SEMI FINAL EXAMS FROM 25.08.2026 TO 05.09.2026</td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>21</td>
+          <td>09.09.2026</td>
+
+          <td>
+            <strong>FR</strong><br />
+            IND AS 116 LEASES + IND AS 23 BORROWING COSTS + IND AS 21 THE
+            EFFECTS OF CHANGES IN FOREIGN EXCHANGE RATES
+            <br /><br />
+            (NO CUMULATIVE TESTING. 45M DESCRIPTIVE & 15M MCQs FROM THIS
+            SYLLABUS ITSELF)
+          </td>
+
+          <td>
+            <strong>AFM</strong><br />
+            BUSINESS VALUATION + INTEREST RATE RISK MANAGEMENT
+            <br /><br />
+            (NO CUMULATIVE TESTING. 45M DESCRIPTIVE & 15M MCQs FROM THIS
+            SYLLABUS ITSELF)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td>16.09.2026</td>
+
+          <td>
+            <strong>FR</strong><br />
+            IND AS 8 ACCOUNTING POLICIES, CHANGES IN ACCOUNTING ESTIMATES AND
+            ERRORS + IND AS 113 FAIR VALUE MEASUREMENT + IND AS 36 IMPAIRMENT OF
+            ASSETS
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+
+          <td>
+            <strong>AUDIT</strong><br />
+            INTERNAL AUDIT (SA 610) + MATERIALITY, RISK ASSESSMENT & INTERNAL
+            CONTROL (INCLUDING SA 315, 320, 330)
+            <br /><br />
+            (NO CUMULATIVE TESTING. 45M DESCRIPTIVE & 15M MCQs FROM THIS
+            SYLLABUS ITSELF)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>25</td>
+          <td>23.09.2026</td>
+
+          <td>
+            <strong>FR</strong><br />
+            IND AS 20 ACCOUNTING FOR GOVERNMENT GRANTS & DISCLOSURE OF
+            GOVERNMENT ASSISTANCE + IND AS 101 FIRST TIME ADOPTION OF INDIAN
+            ACCOUNTING STANDARDS + ACCOUNTING AND TECHNOLOGY + IND AS 37
+            PROVISIONS, CONTINGENT LIABILITIES & CONTINGENT ASSETS + IND AS 19
+            EMPLOYEE BENEFITS
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+
+          <td>
+            <strong>AUDIT</strong><br />
+            DIGITAL AUDITING & ASSURANCE + SPECIAL FEATURES OF AUDIT OF BANKS &
+            NON-BANKING FINANCIAL COMPANIES
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>26</td>
+          <td>26.09.2026</td>
+
+          <td>
+            <strong>FR</strong><br />
+            PROFESSIONAL & ETHICAL DUTY OF A CHARTERED ACCOUNTANT + IND AS 24
+            RELATED PARTY DISCLOSURES + IND AS 102 SHARE BASED PAYMENT +
+            ANALYSIS OF FINANCIAL STATEMENTS + IND AS 33 EARNINGS PER SHARE
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+
+          <td>
+            <strong>AFM</strong><br />
+            ADVANCED CAPITAL BUDGETING DECISIONS + MUTUAL FUNDS
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr class="note-row">
+          <td colspan="1">
+            WHEN WILL WE<br />
+            COVER RTP & MTPs<br />
+            OF NOV 2026<br />
+            ATTEMPT?
+          </td>
+
+          <td colspan="3">
+            FOR ALL SUBJECTS, RTPS & MTPS WILL BE COVERED IN THE REVISION EXAMS
+            CONDUCTED WITHIN ONE WEEK AFTER THEIR RELEASE. THEY WILL ALSO BE
+            COVERED AGAIN IN THE PRE-FINAL EXAMS.
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+        <tr class="group-heading">
+          <td colspan="4">PART 2 OF 2 - GROUP 2 SCHEDULE</td>
+          <td class="result-cell"></td>
+          <td class="result-cell"></td>
+          <td class="result-cell"></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>06.06.2026</td>
+
+          <td>
+            <strong>DT</strong><br />
+            BASIC CONCEPTS + INCOMES WHICH DO NOT FORM PART OF TOTAL INCOME +
+            CAPITAL GAINS
+            <br /><br />
+            (NO CUMULATIVE TESTING. 45M DESCRIPTIVE & 15M MCQs FROM THIS
+            SYLLABUS ITSELF)
+          </td>
+
+          <td>
+            <strong>IDT</strong><br />
+            GST: SUPPLY UNDER GST + CHARGE OF GST + PLACE OF SUPPLY
+            <br /><br />
+            (NO CUMULATIVE TESTING. 45M DESCRIPTIVE & 15M MCQs FROM THIS
+            SYLLABUS ITSELF)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td>13.06.2026</td>
+
+          <td>
+            <strong>DT</strong><br />
+            INCOME FROM OTHER SOURCES + INCOME OF OTHER PERSONS INCLUDED IN
+            ASSESSEE'S TOTAL INCOME + TAXATION OF DIGITAL TRANSACTIONS
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+
+          <td>
+            <strong>IDT</strong><br />
+            GST: EXEMPTIONS FROM GST
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>20.06.2026</td>
+
+          <td>
+            <strong>DT</strong><br />
+            PROFITS & GAINS OF BUSINESS OR PROFESSION
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+
+          <td>
+            <strong>IDT</strong><br />
+            <u>GST</u>: TIME OF SUPPLY + VALUE OF SUPPLY <br /><br />
+            <u>CUSTOMS</u>: LEVY OF & EXEMPTIONS FROM CUSTOMS DUTY + TYPES OF
+            DUTY <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>8</td>
+          <td>27.06.2026</td>
+
+          <td>
+            <strong>DT</strong><br />
+            DEDUCTION, COLLECTION & RECOVERY OF TAX (INCLUDING ADVANCE TAX
+            PROVISIONS)
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+
+          <td>
+            <strong>IDT</strong><br />
+            <u>GST</u>: INPUT TAX CREDIT <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>10</td>
+          <td>04.07.2026</td>
+
+          <td>
+            <strong>DT</strong><br />
+            NON-RESIDENT TAXATION
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+
+          <td>
+            <strong>IDT</strong><br />
+            <u>GST</u>: PAYMENT OF TAX + ELECTRONIC COMMERCE TRANSACTIONS UNDER
+            GST <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr class="section-row">
+          <td colspan="4">QUARTER-FINAL EXAMS FROM 07.07.2026 TO 18.07.2026</td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>12</td>
+          <td>25.07.2026</td>
+
+          <td>
+            <strong>DT</strong><br />
+            AGGREGATION OF INCOME, SET OFF OR CARRY FORWARD OF LOSSES +
+            DEDUCTIONS FROM GROSS TOTAL INCOME + DOUBLE TAXATION RELIEF
+            <br /><br />
+            (NO CUMULATIVE TESTING. 45M DESCRIPTIVE & 15M MCQs FROM THIS
+            SYLLABUS ITSELF)
+          </td>
+
+          <td>
+            <strong>IDT</strong><br />
+            <u>GST</u>: TAX INVOICE, CREDIT & DEBIT NOTES + ACCOUNTS & RECORDS +
+            E-WAY BILL <br /><br />
+            <u>CUSTOMS</u>: CLASSIFICATION OF IMPORT & EXPORT GOODS <br /><br />
+            (NO CUMULATIVE TESTING. 45M DESCRIPTIVE & 15M MCQs FROM THIS
+            SYLLABUS ITSELF)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>14</td>
+          <td>01.08.2026</td>
+
+          <td>
+            <strong>DT</strong><br />
+            TRANSFER PRICING + ADVANCE RULINGS
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+
+          <td>
+            <strong>IDT</strong><br />
+            <u>GST</u>: RETURNS + JOB WORK <br /><br />
+            <u>CUSTOMS</u>: VALUATION UNDER THE CUSTOMS ACT, 1962 <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>16</td>
+          <td>08.08.2026</td>
+
+          <td>
+            <strong>DT</strong><br />
+            ASSESSMENT OF VARIOUS ENTITIES
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+
+          <td>
+            <strong>IDT</strong><br />
+            <u>GST</u>: REFUNDS UNDER GST + REGISTRATION <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>18</td>
+          <td>15.08.2026</td>
+
+          <td>
+            <strong>DT</strong><br />
+            ASSESSMENT OF TRUSTS & INSTITUTIONS, POLITICAL PARTIES & OTHER
+            SPECIAL ENTITIES + DISPUTE RESOLUTION
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+
+          <td>
+            <strong>IDT</strong><br />
+            <u>GST</u>: IMPORT & EXPORT UNDER GST + ASSESSMENT & AUDIT +
+            INSPECTION, SEARCH, SEIZURE & ARREST <br /><br />
+            <u>CUSTOMS</u>: IMPORTATION & EXPORTATION OF GOODS <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+        <tr class="section-row">
+          <td colspan="4">SEMI FINAL EXAMS FROM 25.08.2026 TO 05.09.2026</td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>20</td>
+          <td>05.09.2026</td>
+
+          <td>
+            <strong>DT</strong><br />
+            BUSINESS REORGANISATION + TAXATION OF DIGITAL ECONOMY + EQUALISATION
+            LEVY + OVERVIEW OF MODEL GST LAW
+            <br /><br />
+            (NO CUMULATIVE TESTING. 45M DESCRIPTIVE & 15M MCQs FROM THIS
+            SYLLABUS ITSELF)
+          </td>
+
+          <td>
+            <strong>IDT</strong><br />
+            CUSTOMS: EXPORT PROCEDURES + IMPORT PROCEDURES + BAGGAGE, COURIER &
+            POSTAL IMPORTS + WAREHOUSING
+            <br /><br />
+            (NO CUMULATIVE TESTING. 45M DESCRIPTIVE & 15M MCQs FROM THIS
+            SYLLABUS ITSELF)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>22</td>
+          <td>12.09.2026</td>
+
+          <td>
+            <strong>DT</strong><br />
+            TAX AUDIT + TDS/TCS (COMPLETE) + RETURN OF INCOME
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+
+          <td>
+            <strong>IDT</strong><br />
+            CUSTOMS: DUTY DRAWBACK + REFUNDS + DEMANDS & RECOVERY
+            <br /><br />
+            GST: OFFENCES & PENALTIES
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>24</td>
+          <td>19.09.2026</td>
+
+          <td>
+            <strong>DT</strong><br />
+            ASSESSMENT PROCEDURE + APPEALS & REVISION
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+
+          <td>
+            <strong>IDT</strong><br />
+            GST: MISCELLANEOUS PROVISIONS + ADVANCE RULING + ANTI-PROFITEERING +
+            E-COMMERCE
+            <br /><br />
+            CUSTOMS: MISCELLANEOUS PROVISIONS
+            <br /><br />
+            (DESCRIPTIVE - 40M + 5M CUMULATIVE TESTING, MCQs - 15M)
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr>
+          <td>27</td>
+          <td>03.10.2026</td>
+
+          <td>
+            <strong>DT</strong><br />
+            COMPLETE REVISION TEST (FULL SYLLABUS)
+            <br /><br />
+            60 MARKS
+          </td>
+
+          <td>
+            <strong>IDT</strong><br />
+            COMPLETE REVISION TEST (FULL SYLLABUS)
+            <br /><br />
+            60 MARKS
+          </td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+
+        <tr class="final-row">
+          <td colspan="4">PRE-FINAL EXAMS FROM 06.10.2026 TO 17.10.2026</td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+        <tr class="final-row">
+          <td colspan="4">ICAI CA FINAL NOVEMBER 2026 EXAMINATION</td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td><input type="number" class="mark-input mark-field" /></td>
+          <td class="result-cell expected-percent">0%</td>
+          <td class="result-cell actual-percent">0%</td>
+          <td class="result-cell gap-cell">0</td>
+        </tr>
+      </table>
+    </div>
+
+    <p>
+      <strong>Note:</strong> This is a starter HTML recreation based on the
+      uploaded schedule pages. Additional rows/pages can be added using the same
+      structure.
+    </p>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const inputs = document.querySelectorAll(".mark-field");
+      const maxMarks = 60;
+      const specialExamMaxMarks = 600;
+
+      const getRowMaxMarks = (row) => {
+        const rowText = row.textContent;
+        const isSpecialExam = /quarter|quater|semi|pre[-\s]?final/i.test(
+          rowText,
+        );
+        return isSpecialExam ? specialExamMaxMarks : maxMarks;
+      };
+
+      const clampInput = (input, max) => {
+        if (input.value === "") return;
+        const value = Number(input.value);
+        if (value > max) input.value = max;
+        if (value < 0) input.value = 0;
+      };
+
+      const toNumber = (value) => {
+        const number = Number(value);
+        return Number.isFinite(number) ? number : 0;
+      };
+
+      const getPercent = (value, possible) => {
+        return possible ? Math.round((value / possible) * 100) : 0;
+      };
+
+      const updateRowResults = (row) => {
+        const rowInputs = row.querySelectorAll(".mark-field");
+        if (rowInputs.length < 4) return;
+
+        const rowMaxMarks = getRowMaxMarks(row);
+        const possibleMarks = rowMaxMarks * 2;
+
+        const expectedTotal =
+          toNumber(rowInputs[0].value) + toNumber(rowInputs[1].value);
+        const actualTotal =
+          toNumber(rowInputs[2].value) + toNumber(rowInputs[3].value);
+
+        const expectedPercent = getPercent(expectedTotal, possibleMarks);
+        const actualPercent = getPercent(actualTotal, possibleMarks);
+        const gap = actualTotal - expectedTotal;
+
+        row.querySelector(".expected-percent").textContent =
+          expectedPercent + "%";
+        row.querySelector(".actual-percent").textContent = actualPercent + "%";
+
+        const gapCell = row.querySelector(".gap-cell");
+        gapCell.textContent = gap;
+        gapCell.classList.toggle("gap-positive", gap > 0);
+        gapCell.classList.toggle("gap-negative", gap < 0);
+      };
+
+      const updateConsolidatedResults = () => {
+        let expectedTotal = 0;
+        let expectedPossible = 0;
+        let actualTotal = 0;
+        let actualPossible = 0;
+
+        document.querySelectorAll("tr").forEach((row) => {
+          const rowInputs = row.querySelectorAll(".mark-field");
+          if (rowInputs.length < 4) return;
+
+          const rowMaxMarks = getRowMaxMarks(row);
+          const expectedInputs = [rowInputs[0], rowInputs[1]];
+          const actualInputs = [rowInputs[2], rowInputs[3]];
+
+          expectedInputs.forEach((input) => {
+            if (input.value !== "") {
+              expectedTotal += toNumber(input.value);
+              expectedPossible += rowMaxMarks;
+            }
+          });
+
+          actualInputs.forEach((input) => {
+            if (input.value !== "") {
+              actualTotal += toNumber(input.value);
+              actualPossible += rowMaxMarks;
+            }
+          });
+        });
+
+        document.getElementById("consolidatedExpectedPercent").textContent =
+          getPercent(expectedTotal, expectedPossible) + "%";
+        document.getElementById("consolidatedExpectedMarks").textContent =
+          expectedTotal + " / " + expectedPossible;
+        document.getElementById("consolidatedActualPercent").textContent =
+          getPercent(actualTotal, actualPossible) + "%";
+        document.getElementById("consolidatedActualMarks").textContent =
+          actualTotal + " / " + actualPossible;
+
+        const gap = actualTotal - expectedTotal;
+        const gapElement = document.getElementById("consolidatedGap");
+        gapElement.textContent = gap;
+        gapElement.classList.toggle("gap-positive", gap > 0);
+        gapElement.classList.toggle("gap-negative", gap < 0);
+      };
+
+      // Populate values from localStorage and set up event listeners
+      inputs.forEach((input, index) => {
+        const key = `ca_final_marks_${index}`;
+        const row = input.closest("tr");
+        const rowMaxMarks = getRowMaxMarks(row);
+
+        input.max = rowMaxMarks;
+
+        // Load saved value safely for ALL fields
+        const savedValue = localStorage.getItem(key);
+        if (savedValue !== null && savedValue !== "") {
+          input.value = savedValue;
+          clampInput(input, rowMaxMarks);
+        }
+
+        input.addEventListener("input", () => {
+          clampInput(input, rowMaxMarks);
+          if (input.value === "") {
+            localStorage.removeItem(key);
+          } else {
+            localStorage.setItem(key, input.value);
+          }
+          updateRowResults(row);
+          updateConsolidatedResults();
+        });
+      });
+
+      // Run initial calculations on page load
+      document.querySelectorAll("tr").forEach(updateRowResults);
+      updateConsolidatedResults();
+    });
+
+        // --- CA Final Exam Countdown Logic ---
+    const targetDate = new Date("2026-11-02T14:00:00+05:30").getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference <= 0) {
+        document.querySelector('.timer-grid').innerHTML = `
+          <div style="grid-column: 1 / -1; font-size: 22px; font-weight: bold; color: #16734d; padding: 20px; border: 2px solid #222; background: #fafafa;">
+            Exam has commenced! Best of luck!
+          </div>
+        `;
+        return;
+      }
+
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+      document.getElementById("days").textContent = String(days).padStart(2, '0');
+      document.getElementById("hours").textContent = String(hours).padStart(2, '0');
+      document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
+      document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
+    }
+
+    // Initialize and run
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+</html>
